@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-addu-sis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Style (Navigation Bar) */
+        .navbar {
+          height: 100%;
+          width: 200px; /* Adjusting the Width */
+          position: fixed; /* Sidebar is fixed While it Stays in Place when Scrolling */
+          z-index: 1; /* Top (Stays on it)*/
+          top: 0; /* Top (Stays on it) */
+          left: 0;
+          background-color: blue; /* Background Color (Blue) */
+          overflow-x: hidden; /* Horizontal Scroll Disabler */
+          padding-top: 20px;
+        }
+        
+        /* Style (Navigation Links) */
+        .navbar a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white; /* Text Color (White) */
+          display: block;
+        }
+        
+        /* Color Changes When Hovering */
+        .navbar a:hover {
+          background-color: darkblue;
+        }
+        
+        /* Style (Logo) */
+        .logo {
+          display: block;
+          margin: 0 auto 20px; /* Vertically Center of the Logo While adding Spacing */
+          width: 50%; /* Navigation Bar's Width (80%) */
+          height: auto; /* Aspect ratio Maintain */
+        }
+        
+        .logo2 {
+          display: block;
+          margin: 0 auto 20px; /* Vertically Center of the Logo While adding Spacing */
+          width: 100%; /* Navigation Bar's Width (80%) */
+          height: auto; /* Aspect ratio Maintain */
+        }
+
+        /* Style (Content) */
+        .content {
+          margin-left: 200px; /* Sidebar (Same Width) */
+          padding: 20px 10px;
+        }
+</style>
+</head>
+<body>
+
+    <div class="bg-red-500 p-4">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <img class="logo" src="AdDU_logo.png" alt="Logo">
+        <img class="logo2" src="SIS_logo.png" alt="Logo">
+        <a href="My_Grades.html">My Grades</a>
+        <a href="My_Curriculum.html">My Curriculum</a>
+        <a href="Grade_Encoding.html">Grade Encoding</a>
+    </div>
+
+    <header>
+        <h1>Class List</h1>
+    </header>
+    
+    <table class="class-info">
+        <tr>
+            <td>Code:Subject</td>
+            <td>4-114/IT 2241 - EVENT-DRIVEN PROGRAMMING</td>
+        </tr>
+        <tr>
+            <td>Schedule:</td>
+            <td>2:05PM-4:35PM F605 TH</td>
+        </tr>
+        <tr>
+            <td>Academic Period:</td>
+            <td>2nd Semester 2023-2024</td>
+        </tr>
+        <tr>
+            <td>Grading Period:</td>
+            <td>Final</td>
+        </tr>
+    </table>
+
+    <h2>Grade Encoding Guidelines</h2>
+    <ol>
+        <li>Grades in the NEW Grading System must be encoded as A,B+,B,C,D,F,FD,WP</li>
+        <li>Non FYPD Grades in the OLD Grading System must be from 65 to 00</li>
+        <li>FYPD Grades in the NEW Grading System must be encoded as A,B+,C+,C,D,F,FD,WP</li>
+        <li>FYPD Grades in the OLD Grading System must be encoded as O - Outstanding, HS - Highly Satisfactory, S - Satisfactory, MS - Moderately Satisfactory, F - Fair, P - Poor</li>
+        <li>NE Grades will not be accepted. Students who have not taken exams must be provided the minimum grade. After the exam has been taken, the teacher should file a grade correction form at the Registrar's Office.</li>
+        <li>Select AUD for Audit students.</li>
+    </ol>
+
+    <table class="custom-table">
+        <tr>
+            <td style="background-color: #666; color: #fff;">CODE</td>
+            <td style="background-color: #666; color: #fff;">STUDENT NAME</td>
+            <td style="background-color: #666; color: #fff;">FINAL</td>
+            <td style="background-color: #666; color: #fff;">GRD. TYPE</td>
+            <td style="background-color: #666; color: #fff;">YEAR LVL.</td>
+            <td style="background-color: #666; color: #fff;">ACAD. STATUS</td>
+            <td style="background-color: #666; color: #fff;">YR. OF ENTRY</td>
+            <td style="background-color: #666; color: #fff;">ENTRY YR. LVL</td>
+        </tr>
+        <tr>
+            <td>205159</td>
+            <td>CHALAMET, TIMOTHÉE HAL</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>295729</td>
+            <td>GOSLING, RYAN THOMAS</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>234951</td>
+            <td>ANCHETA, JAMES DOUGLAS</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>94605</td>
+            <td>GUEVARRA, DENNIS DEEVO</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>850184</td>
+            <td>BATAGA, VIVENCIO II</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>495155</td>
+            <td>PATTINSON, ROBERT DOUGLAS THOMAS</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>135626</td>
+            <td>KLEIN, GINA GIBI</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+        </tr>
+            <td>235178</td>
+            <td>JÓNSDÓTTIR, LAUFEY LIN</td>
+            <td>
+                <select>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                    <option value="FD">FD</option>
+                    <option value="WP">WP</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </td>
+            <td>NEW</td>
+            <td>2</td>
+            <td>Regular</td>
+            <td>2021</td>
+            <td>1</td>
+        </tr>
+    </tr>
+        <td>651222</td>
+        <td>GRANT, ELIZABETH WOOLRIDGE</td>
+        <td>
+            <select>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">F</option>
+                <option value="FD">FD</option>
+                <option value="WP">WP</option>
+                <option value="N/A">N/A</option>
+            </select>
+        </td>
+        <td>NEW</td>
+        <td>2</td>
+        <td>Regular</td>
+        <td>2021</td>
+        <td>1</td>
+    </tr>
+</tr>
+    <td>184949</td>
+    <td>ROBBIE, MARGOT ELISE</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>2</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</tr>
+</tr>
+    <td>783130</td>
+    <td>BUTLER, AUSTIN ROBERT</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>2</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</tr>
+</tr>
+    <td>613715</td>
+    <td>SUNDSTRÖM, REBECCA LOUISA FERGUSON</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>3</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</tr>
+</tr>
+    <td>659871</td>
+    <td>CASO, ANA CELIA DE ARMAS</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>3</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</tr>
+</tr>
+    <td>771117</td>
+    <td>ESTRADA, ÓSCAR ISAAC HERNÁNDEZ</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>3</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</tr>
+</tr>
+    <td>651331</td>
+    <td>PASCAL, JOSÉ PEDRO BALMACEDA</td>
+    <td>
+        <select>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+            <option value="FD">FD</option>
+            <option value="WP">WP</option>
+            <option value="N/A">N/A</option>
+        </select>
+    </td>
+    <td>NEW</td>
+    <td>3</td>
+    <td>Regular</td>
+    <td>2021</td>
+    <td>1</td>
+</table>
+</body>

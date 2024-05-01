@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mini-addu-sis</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style>
+/* Style (Navigation Bar) */
+.navbar {
+  height: 100%;
+  width: 200px; /* Adjusting the Width */
+  position: fixed; /* Sidebar is fixed While it Stays in Place when Scrolling */
+  z-index: 1; /* Top (Stays on it) */
+  top: 0; /* Top (Stays on it) */
+  left: 0;
+  background-color: blue; /* Background Color (Blue) */
+  overflow-x: hidden; /* Horizontal Scroll Disabler */
+  padding-top: 20px;
+}
+
+/* Style (Navigation Links) */
+.navbar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white; /* Text Color (White) */
+  display: block;
+}
+
+/* Color Changes When Hovering */
+.navbar a:hover {
+  background-color: darkblue;
+}
+
+/* Style (Logo) */
+.logo {
+  display: block;
+  margin: 0 auto 20px; /* Vertically Center of the Logo While adding Spacing */
+  width: 50%; /* Navigation Bar's Width (80%) */
+  height: auto; /* Aspect ratio Maintain */
+}
+
+.logo2 {
+  display: block;
+  margin: 0 auto 20px; /* Vertically Center of the Logo While adding Spacing */
+  width: 100%; /* Navigation Bar's Width (80%) */
+  height: auto; /* Aspect ratio Maintain */
+}
+
+/* Style (Content) */
+.content {
+  margin-left: 200px; /* Sidebar (Same Width) */
+  padding: 20px 10px;
+}
+</style>
+</head>
+<body>
+
+  <div class="bg-sky-300 p-4">
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <img class="logo" src="AdDU_logo.png" alt="Logo">
+  <img class="logo2" src="SIS_logo.png" alt="Logo">
+  <a href="My_Grades.html">My Grades</a>
+  <a href="My_Curriculum.html">My Curriculum</a>
+  <a href="Grade_Encoding.html">Grade Encoding</a>
+</div>
+
+<header>
+  <h1>My Grades</h1>
+</header>
+
+<table class="class-info">
+  <tr>
+      <td>Code:</td>
+      <td>145555</td>
+      <td>Course:</td>
+      <td>BS-IT</td>
+      <td>Year:</td>
+      <td>2</td>
+  </tr>
+  <tr>
+      <td>Student Name:</td>
+      <td>GUEVARRA, DENNIS DEEVO CAL</td>
+      <td>Division:</td>
+      <td>CS</td>
+      <td>Section</td>
+      <td>InTec 2-A</td>
+  </tr>
+  <tr>
+      <td>RGC No:</td>
+      <td>15505305</td>
+      <td>Academic Period:</td>
+      <td>2nd Semester, 2023-2024</td>
+      <td>Status:</td>
+      <td>Regular</td>
+  </tr>
+  <tr>
+      <td></td>
+      <td></td>
+      <td>Annual QPI:</td>
+      <td>3.810</td>
+      <td></td>
+      <td></td>
+  </tr>
+</table>
+
+<table class="custom-table">
+  <tr>
+      <td style="background-color: #666; color: #fff;">SUBJ NO.</td>
+      <td style="background-color: #666; color: #fff;">DESCRIPTIVE TITLE</td>
+      <td style="background-color: #666; color: #fff;">PRELIM</td>
+      <td style="background-color: #666; color: #fff;">MIDTERM</td>
+      <td style="background-color: #666; color: #fff;">PRE-FINAL</td>
+      <td style="background-color: #666; color: #fff;">FINAL</td>
+      <td style="background-color: #666; color: #fff;">UNITS</td>
+      <td style="background-color: #666; color: #fff;">CREDIT TO</td>
+  </tr>
+  <tr>
+      <td>CS 2240 (4-111)</td>
+      <td>APPLICATIONS DEVELOPMENT AND EMERGING TECHNOLOGIES (* 12:25P-1:55P F610 TTh * 3:05P-5:05P F610 F * )</td>
+      <td>A</td>
+      <td>B+</td>
+      <td>B+</td>
+      <td>A</td>
+      <td>3.00</td>
+      <td></td>
+  </tr>
+
+  <tr>
+    <td>GE 1213 (16-221)</td>
+    <td>LIFE AND WORKS OF RIZAL (* 5:50P-7:20P F311 MW * )</td>
+    <td>C</td>
+    <td>B+</td>
+    <td>A</td>
+    <td>D</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>GE 3219 (16-365)</td>
+    <td>ELECTIVE 2 (* 3:45P-5:15P F402 TTh * )</td>
+    <td>A</td>
+    <td>D</td>
+    <td>C</td>
+    <td>B</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>IT 2239 (4-107)</td>
+    <td>FUNDAMENTALS OF DATABASE SYSTEMS (* 9:50A-11:50A F605 F * 2:05P-3:35P F605 MW * )</td>
+    <td>B</td>
+    <td>A</td>
+    <td>B+</td>
+    <td>C+</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>IT 2241 (4-113)</td>
+    <td>EVENT-DRIVEN PROGRAMMING (* 5:50P-8:20P F610 TTh * )</td>
+    <td>B+</td>
+    <td>B+</td>
+    <td>C</td>
+    <td>A</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>IT 2242 (4-109)</td>
+    <td>STATISTICS FOR RESEARCH (* 9:20A-10:50A D404 MW * )</td>
+    <td>F</td>
+    <td>C+</td>
+    <td>B</td>
+    <td>A</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>IT 2243 (4-105)</td>
+    <td>IT ELECTIVE 1 (* 12:25P-1:55P F612 MW * 1:00P-3:00P F612 F * )</td>
+    <td>B+</td>
+    <td>A</td>
+    <td>D+</td>
+    <td>A</td>
+    <td>3.00</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>PE 2217 (16-408)</td>
+    <td>PATH-FIT 4: TEAM SPORTS, GROUP EXERCISE AND RECREATIONAL ACTIVITIES (* 9:50A-11:50A M400A Th * )</td>
+    <td>A</td>
+    <td>C</td>
+    <td>B+</td>
+    <td>A</td>
+    <td>2.00</td>
+    <td></td>
+  </tr>
+
+</body>
+</html>
